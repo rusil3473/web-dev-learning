@@ -1,7 +1,7 @@
 import { NextRequest,NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import jwt from "jsonwebtoken";
-import { decode } from "punycode";
+
 
 export const getDataFromToken=async(req:NextRequest)=>{
   try {
