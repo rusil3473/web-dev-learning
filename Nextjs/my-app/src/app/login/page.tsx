@@ -15,7 +15,7 @@ export default function SignupPage() {
   const onSignUp = async (e: any) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/users/login", user);
+     await axios.post("/api/users/login", user);
       console.log("Login Success");
       router.push("/profile");
     } catch (error: any) {
@@ -62,7 +62,7 @@ export default function SignupPage() {
         </button>
 
         <div className="text-center">
-          <span className="text-gray-400 text-sm">Don't have an account?</span>
+          <span className="text-gray-400 text-sm">Dont have an account?</span>
           <Link
             href="/signup"
             className="ml-2 text-blue-400 hover:text-blue-500 font-medium transition duration-300"
