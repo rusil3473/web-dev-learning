@@ -1,0 +1,48 @@
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color:red;
+}
+
+p{
+    color: #02030E;
+}
+head{
+    color: yellow;
+}
+
+#t{
+    background-color:#2a3d9e;   
+}
+/* body{
+    font-size: 22px;
+    color: cyan;
+}
+button,input,textarea,select{
+   font: inherits;
+}
+p{
+    color: red;
+}
+h1,h2{
+    color:  blue;
+}
+
+.highlight{
+    text-transform: uppercase;
+    background-color: yellow;
+}
+
+
+
+.gray{
+    color:  gray;
+}
+
+#second{
+    font-style: italic;
+}
+
+
+    

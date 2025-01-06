@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <p>
+      Cart Quantity
+    </p>
+    <button onclick="alert(`${count}`)">Show Quantity</button>
+    <button onclick="add()">Add to Cart</button>
+    <button onclick="Add2()">+2</button>
+    <button onclick="Add3()">+3</button>
+    <button onclick="reset()">Reset Cart</button>
+  </main>
+  <script>
+    let count = 0;
+    function f() {
+      alert(count);
+    }
+    function add() {
+      count++;
+    }
+    function Add2() {
+      count += 2;
+    }
+    function Add3() {
+      count += 3;
+    }
+    function reset() {
+      count = 0;
+    }
+  </script>
+</body>
+
+</html>

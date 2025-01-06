@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 5% 10%;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+ol{
+  width: 150px;
+  border: 2px dashed red;
+  list-style-type: lower-alpha;
+}
+ul{
+ 
+  width: 150px;
+  list-style-image: url("../images/");
+}
+
+ul ::marker{
+  color: red;
+  font-size: 1em;
+  
+  content: "5 rupee Only >> ";
+}

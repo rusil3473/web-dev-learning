@@ -1,0 +1,23 @@
+html {
+    font-size: large;
+}
+
+h1 {
+    border: 2px solid red;
+    width: 20%;
+
+    border: 50% ridge blue;
+
+    outline: 10px solid blue;
+}
+
+#circle {
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    margin: 3rem auto;
+    border: 2px solid black;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+    border-radius: 50px ;
+}

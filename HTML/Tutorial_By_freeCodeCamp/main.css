@@ -1,0 +1,19 @@
+
+html{
+    font-size: medium;
+}
+body{
+    background-color:rgb(194, 30, 30);
+    color: aliceblue;
+}
+
+a{
+    color: aliceblue;
+
+}
+a:visited{
+    color:  lightblue;
+}
+a:hover,a:active{
+    color: rebeccapurple;
+}

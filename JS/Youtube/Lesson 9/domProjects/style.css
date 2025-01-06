@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#subscribe {
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+#container {
+  margin-top: 50px;
+
+}
+
+input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+button {
+  color: white;
+  background-color: rgb(21, 139, 21);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  border: none;
+}

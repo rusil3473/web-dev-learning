@@ -1,0 +1,23 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Gr1,.Gr2{
+  display: grid;
+  grid-template-columns: 50% 25% 20% ;
+  column-gap: 10px;
+  row-gap: 5px;
+  align-items: center;
+}
+.Gr2{
+  margin-top: 15px;
+}
+.addButton{
+  background-color: rgb(0, 214, 0);
+  color: white;
+}
+.delButton{
+  background-color: red;
+  color: white;
+
+}

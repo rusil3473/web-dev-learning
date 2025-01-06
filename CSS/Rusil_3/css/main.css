@@ -1,0 +1,17 @@
+body{
+    padding: 10%;
+    font-size: 2rem;
+    
+}
+p{
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    font-weight: bolder;
+    font-family: sans-serif;}
+/* 
+input,button{
+    font: inherit;
+} */

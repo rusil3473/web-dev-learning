@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  display: grid;
+  border-bottom: 1px solid black;
+  grid-template-columns: 100%;
+  position: sticky;
+  top: 0;
+  place-content: center;
+  text-align: center;
+  background-color: purple;
+}
+header nav{
+  background-color: white;
+}
+main{
+  display: grid;
+  display: flex;
+  flex-grow: 1;
+  place-content: center;
+  text-align: center;
+  align-items: center;
+}
+footer{
+  display: flex;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  position: sticky;
+  align-items: center;
+  bottom: 0;
+  background-color: purple;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Project</title>
+</head>
+
+<body>
+  <p>YouTube Subscribe Button</p>
+  <button id="subscribe" onclick="flip()">Subscribe</button>
+
+
+ 
+
+<article id="container">
+  <p>Amazon Shipping Calculator</p>
+  <p>Orders under $40 = +$10 shipping.</p>
+ <p>Orders over $40 = FREE shipping.</p>
+  <input id="in" type="text" placeholder="Cost of order" onkeydown="check()">
+  <button onclick="Calculate()" >Calculate</button>
+  <p id="Total"></p>
+</article>
+
+<article id="container"></article>
+  <p>Rock Paper Scissors</p>
+  <a href="/Lesson 8/index.html">Click Here</a>
+</article>
+
+
+  <script>
+    let subscribeEle = document.getElementById("subscribe");
+    function flip() {
+      if (subscribeEle.innerText == "Subscribe") {
+        subscribeEle.innerText="Subscribed";
+        subscribeEle.style.color="black";
+        subscribeEle.style.backgroundColor="white";
+      }
+      else{
+        subscribeEle.innerText="Subscribe";
+        subscribeEle.style.color="white";
+        subscribeEle.style.backgroundColor="black";
+      }
+    }
+
+   function Calculate(){
+    let inEle=document.getElementById("in");
+    if(!inEle.value){
+      alert("Enter cost of order");
+    }
+    else if(inEle.value < 40){
+      document.getElementById("Total").innerText=`${parseInt(inEle.value)+10}`;
+    }
+    else{
+      document.getElementById("Total").innerText=`${parseInt(inEle.value)}`;
+
+    }
+   }
+
+   function check(){
+    if(event.key=="Enter"){
+      Calculate();
+    }
+   }
+
+  </script>
+</body>
+
+</html>

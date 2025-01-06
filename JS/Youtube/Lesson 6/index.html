@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissores</title>
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+  <p id="abc">Rock Paper Scissores</p>
+  <button onclick="playerMove('Rock')">Rock</button>
+  <button onclick="playerMove('Paper')">Paper</button>
+  <button onclick="playerMove('Scissores')">Scissores</button>
+  <p id="Moves"></p>
+  <p id="score"></p>
+  <script>
+    let draw = 0;
+    let win = 0;
+    let lose = 0;
+    let a = document.getElementById("score");
+    a.innerText = `score : Win ${win} Lose: ${lose} Draw: ${draw} `;
+    function randomMove() {
+      let a = Math.floor(Math.random() * 3);
+      if (a == 0) {
+        return "Rock";
+      }
+      else if (a == 1) {
+        return "Paper";
+      }
+      else {
+        return "Scissores";
+      }
+    }
+    function playerMove(move) {
+      let computerMove = randomMove();
+      let moves=document.getElementById("Moves");
+      moves.innerText=`Player Move Is ${move} --> Computer Move Is ${computerMove}`;
+      if (move === "Rock") {
+        if (computerMove === "Rock") {
+          draw++;
+        }
+        else if (computerMove == "Paper") {
+          lose++;
+        }
+        else {
+          win++;
+        }
+      }
+      if (move === "Paper") {
+        if (computerMove === "Rock") {
+          win++;
+        }
+        else if (computerMove == "Paper") {
+          draw++;
+        }
+        else {
+          lose++;
+        }
+      }
+      if (move === "Scissores") {
+        if (computerMove === "Rock") {
+          lose++;
+        }
+        else if (computerMove == "Paper") {
+          win++;
+        }
+        else {
+          draw++;
+        }
+      }
+      let a = document.getElementById("score");
+      a.innerText = `score : Win ${win} Lose: ${lose} Draw: ${draw} `;
+      
+      
+    }
+
+
+  </script>
+</body>
+
+</html>
