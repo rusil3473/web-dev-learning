@@ -1,9 +1,9 @@
-import { NextRequest,NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import jwt from "jsonwebtoken";
 
 
-export const getDataFromToken=async(req:NextRequest)=>{
+export const getDataFromToken=async()=>{
   try {
     const reqCookies=await cookies()
     const token =reqCookies.get("token")?.value ||"";

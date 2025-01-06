@@ -12,7 +12,7 @@ export default function ForgotPasswordPage() {
   const onForgotPassword = async (e: any) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/users/forgot-password", email );
+       await axios.post("/api/users/forgot-password", email );
       console.log("Password reset email sent");
       alert("Password reset email has been sent to your email address.");
       router.push("/login");

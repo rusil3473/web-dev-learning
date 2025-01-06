@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer"
 import User from "@/models/userModel"
-import bcrypt, { genSalt } from "bcryptjs"
+import bcrypt from "bcryptjs"
 
 
 export async function sendEmail({ email, emailType, userId }: any) {

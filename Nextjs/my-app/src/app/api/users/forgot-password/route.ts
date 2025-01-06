@@ -15,8 +15,8 @@ export async function POST(req:NextRequest) {
     await sendEmail({email,emailType:"RESET",userId:user._id});
     return NextResponse.json({message:"Mail Sent to given email address check user email to reset password "},{status:200})
 
-  } catch (error:any) {
-    return NextResponse.json({message:"Error while reseting password"},{status:500})
+  } catch (err :any) {
+    return NextResponse.json({message:"Error while reseting password",err},{status:500})
   }
   
 }

@@ -7,7 +7,7 @@ export default function ResetPasswordPage() {
   const onResetPassword=async (e:any)=>{
     e.preventDefault();
     try {
-      const res=await axios.post("api/users/reset-password",{newpassword:password,token})
+      await axios.post("api/users/reset-password",{newpassword:password,token})
       alert("Password reset successful")
       
     } catch (error:any) {
@@ -26,7 +26,7 @@ export default function ResetPasswordPage() {
     else{
       setError("")
     }
-  },[confirmPassword])
+  },[confirmPassword, password])
 
  
   useEffect(()=>{

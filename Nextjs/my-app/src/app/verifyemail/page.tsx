@@ -5,15 +5,15 @@ import { useEffect, useState } from "react"
 
 export default function VerifyPage() {
   const [token, setToken] = useState("");
-  const [verified, setVerified] = useState(false);
-  const [err, setErr] = useState(false);
 
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const verifyEmail = async () => {
     try {
-      const res = await axios.post("/api/users/verifyemail", { token })
-      setVerified(true);
+     await axios.post("/api/users/verifyemail", { token })
+
     } catch (error: any) {
-      setErr(true);
+ 
       console.log(error)
     }
   }
@@ -27,7 +27,7 @@ export default function VerifyPage() {
     if (token.length > 0) {
       verifyEmail();
     }
-  }, [token])
+  }, [token, verifyEmail])
   return (
     <h1 className="text-white bg-green-400">Verify Page</h1>
 
